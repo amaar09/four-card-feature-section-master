@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@700&family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: Poppins;
+    font-size: 15px;
+    /* background-image: linear-gradient(to right, hsl(0, 78%, 62%),hsl(180, 62%, 55%), hsl(34, 97%, 64%),hsl(212, 86%, 64%)); */
+    background-color: hsl(240, 100%, 98%); ;
+}
+
+.container {
+    /* border: 2px solid red; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    /* border: 2px solid rgb(0, 55, 255); */
+
+}
+
+.heading {
+    /* border: 2px solid rgb(81, 255, 0); */
+    text-align: center;
+    max-width: 555px;
+    margin: auto;
+}
+
+.heading h1 {
+    color: var(--Grayish-Blue);
+    font-weight: 333;
+    font-size: 35px;
+}
+
+.heading h2 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.heading h4 {
+    color: hsl(229, 6%, 66%);
+    padding: 15px 0;
+}
+
+
+.box-section {
+    display: flex;
+    /* border: 2px solid rgb(0, 191, 255); */
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    margin-right: 20px;
+}
+.supervisor:hover {
+    background: linear-gradient(to bottom, hsl(180, 62%, 55%) 0%, hsl(0, 0%, 100%) 100%);
+}
+
+.T-B {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    margin-bottom: 20px;
+}
+.T-B:hover {
+    background: linear-gradient(to bottom,  hsl(0, 78%, 62%) 0%, hsl(0, 0%, 100%) 100%);
+}
+.cal {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.cal:hover {
+    background: linear-gradient(to bottom, hsl(212, 86%, 64%) 0%, hsl(0, 0%, 100%) 100%);
+}
+.karma {
+    margin-left: 20px;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.karma:hover {
+    background: linear-gradient(to bottom, hsl(34, 97%, 64%) 0%, hsl(0, 0%, 100%) 100%);
+}
+
+
+
+
+
+.box-style {
+    position: relative;
+    height: 200px;
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px 2px hsl(229, 6%, 66%);
+    padding: 25px; 
+    transition: transform .5s ease-in-out;
+}
+.box-style:hover{
+    transform: translateY(-0.25em);
+    
+}
+
+.box-style h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+.box-style P {
+    mix-blend-mode: multiply;
+    color: hsl(228, 4%, 56%);
+}
+
+.box-style img {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: transform .9s ease-in-out;
+}
+
+.box-style:hover img{
+    transform: rotateY(360deg);
+}
+
+.box-middle {
+    /* border: 2px dotted darkblue; */
+}
+
+
+@media screen and (max-width: 974px) {
+
+    .container {
+
+        height: 100%;
+    }
+
+    .box-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .supervisor {
+        margin: 0 0 20px 0;
+    }
+    .T-B {
+        margin: 0 0 20px 0;
+
+    }.cal {
+        margin: 0 0 20px 0;
+
+    }
+    .karma {
+        margin: 0 0 20px 0;
+
+    }
+    
+
+}
